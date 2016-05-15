@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 #{request.method} Request Received
+  table
+    thead
+    tbody
+      tr
+        td="Host Name"
+        td= request.hostname
+      tr
+        td="IP"
+        td= request.ip
+      tr
+        td="Base URL"
+        td= request.baseUrl
+      tr
+        td="Original URL"
+        td= request.originalUrl
+      tr
+        td="Params"
+        td= request.params.name
+
+
+
+
+
